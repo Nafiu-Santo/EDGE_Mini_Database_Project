@@ -1,0 +1,30 @@
+//create database and car_owner table
+
+  
+CREATE DATABASE car_rent;
+
+USE car_rent;
+
+CREATE TABLE car_owner (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(30),
+    car_type VARCHAR(30),
+    region VARCHAR(30),
+    car_number VARCHAR(30),
+    contact VARCHAR(30),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+
+ //create car_requests table 
+
+      CREATE TABLE IF NOT EXISTS car_requests (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(30) NOT NULL,
+    car_type VARCHAR(30) NOT NULL,
+    region VARCHAR(30) NOT NULL,
+    contact VARCHAR(30) NOT NULL,
+    status VARCHAR(50) DEFAULT 'Pending',
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+  
