@@ -80,8 +80,8 @@
            background-color:red;
        }
        .message {
-           text-align: center;
            margin-top: 20px;
+           margin-left: 20px;
            font-size: 1.1em;
            font-weight:bold;
        }
